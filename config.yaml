@@ -1,0 +1,16 @@
+config:
+  backup: true
+  create: true
+  dotpath: dotfiles
+dotfiles:
+  d_polybar:
+    src: config/polybar
+    dst: ~/.config/polybar
+  f_config:
+    src: config/i3/config
+    dst: ~/.config/i3/config
+profiles:
+  arch-desktop:
+    dotfiles:
+    - d_polybar
+    - f_config
